@@ -1,0 +1,35 @@
+section {
+    width: 100%;
+    padding: 0 6%;
+    margin: 0 auto;
+}
+
+/* mainBanner S: */
+.mainBanner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.mainBanner .text_box {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.mainBanner .text_box .text_t1 {
+    font-weight: 700;
+    font-size: 0.875em;
+    color: var(--primary-green);
+    line-height: 1.4;
+    letter-spacing: -0.025em;
+}
+
+.mainBanner .text_box .text_t2 {
+    font-weight: 700;
+    font-size: 1.2em;
+    color: var(--neutral-black-50);
+    line-height: 1.3;
+    letter-spacing: -0.025em;
+}
+/* mainBanner E: */
