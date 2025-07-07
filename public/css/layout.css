@@ -1,0 +1,144 @@
+@import url(./reset.css);
+@import url(./_system.css);
+
+.guide {
+  width: 100%;
+  max-width: 720px;
+  min-height: 100vh;
+  margin: 0 auto;
+  background-color: rgba(38, 38, 38, 1);
+  position: relative;
+}
+
+/* header S: */
+header {
+  width: 100%;
+  max-width: 720px;
+  height: 64px;
+  padding: 16px 20px;
+  background-color: var(--neutral-black-800);
+  /* box-shadow: 0px 2.18px 5.45px 0px rgba(0, 0, 0, 0.1); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+header > div {
+  min-width: 1.50em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+  z-index: 10;
+}
+
+header .mid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header .mid span {
+  color: var(--neutral-white);
+}
+
+header .taBtn {
+  height: 2.19em;
+  padding: 0 13.5px;
+  background-color: var(--neutral-black-800);
+  border: 1px solid var(--neutral-black-300, rgba(196, 196, 196, 1));
+  border-radius: 2.19em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+
+header .taBtn span {
+  color: rgba(199, 199, 204, 1);
+}
+
+header .greenText {
+  font-weight: 500;
+  font-size: 1em;
+  color: rgba(0, 210, 130, 1);
+  line-height: 140%;
+  letter-spacing: 0%;
+}
+
+header .headerBtn {
+  display: none;
+}
+
+header .headerBtn.on {
+  display: block;
+}
+/* header E: */
+
+/* footer S: */
+footer {
+  display: none;
+  width: 100%;
+  max-width: 720px;
+  background-color: var(--neutral-black-800);
+  border-top: 1px solid var(--neutral-black-700);
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+footer.trainer,
+footer.member {
+  display: block;
+}
+
+footer ul {
+  width: 100%;
+  padding: 0.5625em 6.6% 2.125em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4px;
+}
+
+footer figure img {
+  width: 1.625em;
+}
+
+footer figure img:nth-of-type(2),
+footer figure.on img:nth-of-type(1) {
+  display: none;
+}
+
+footer figure.on img:nth-of-type(2) {
+  display: block;
+}
+
+footer figure figcaption {
+  color: var(--neutral-black-500);
+}
+
+footer figure.on figcaption {
+  color: var(--neutral-black-50);
+}
+
+footer.trainer ul li.note {
+  display: none;
+}
+
+footer.member ul li.schedule,
+footer.member ul li.management {
+  display: none;
+}
+/* footer E: */
