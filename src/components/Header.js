@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
+import '../css/Header.css';
+
 const Header = ({ title, type }) => {
   /* 
     0: 이전버튼
@@ -23,6 +25,9 @@ const Header = ({ title, type }) => {
 
   const [buttons, setButtons] = useState([]);
   const [selectedOption, setSelectedOption] = useState('option1');
+  const [isSelectOpen, setIsSelectOpen] = useState(false);
+  const toggleSelectOpen = () => setIsSelectOpen((prev) => !prev);
+
 
   useEffect(() => {
     setButtons(type);
@@ -37,20 +42,15 @@ const Header = ({ title, type }) => {
   return (
     <header>
       <div className='left'>
-        <button className={`headerBtn ${buttons[0] === '1' ? 'on' : ''}`} onClick={handleGoBack}>
-          <img src="/img/header/prevBtn.svg" alt="이전 아이콘" />
-        </button>
+        {buttons[0] === '1' && (
+          <button className='headerBtn' onClick={handleGoBack}>
+            <img src="/img/header/prevBtn.svg" alt="이전 아이콘" />
+          </button>
+        )}
 
-        <div className={`selectOption ${buttons[1] === '1' ? 'on' : ''}`}>
-          <select
-            className='headerSelect'
-            value={selectedOption}
-            onChange={(e) => setSelectedOption(e.target.value)}
-          >
-            <option value='option1'>강남 헬스장</option>
-            <option value='option2'>송파 헬스장</option>
-          </select>
-        </div>
+        {buttons[1] === '1' && (
+          <></>
+        )}
       </div>
 
       <div className='mid'>
