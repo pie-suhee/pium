@@ -22,6 +22,7 @@ const Header = ({ title, type }) => {
   */
 
   const [buttons, setButtons] = useState([]);
+  const [selectedOption, setSelectedOption] = useState('option1');
 
   useEffect(() => {
     setButtons(type);
@@ -39,6 +40,17 @@ const Header = ({ title, type }) => {
         <button className={`headerBtn ${buttons[0] === '1' ? 'on' : ''}`} onClick={handleGoBack}>
           <img src="/img/header/prevBtn.svg" alt="이전 아이콘" />
         </button>
+
+        <div className={`selectOption ${buttons[1] === '1' ? 'on' : ''}`}>
+          <select
+            className='headerSelect'
+            value={selectedOption}
+            onChange={(e) => setSelectedOption(e.target.value)}
+          >
+            <option value='option1'>강남 헬스장</option>
+            <option value='option2'>송파 헬스장</option>
+          </select>
+        </div>
       </div>
 
       <div className='mid'>
