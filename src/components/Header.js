@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
+import CustomSelect from './selectOption/CustomSelect';
+
 import '../css/Header.css';
 
 const Header = ({ title, type }) => {
@@ -24,11 +26,7 @@ const Header = ({ title, type }) => {
   */
 
   const [buttons, setButtons] = useState([]);
-  const [selectedOption, setSelectedOption] = useState('option1');
-  const [isSelectOpen, setIsSelectOpen] = useState(false);
-  const toggleSelectOpen = () => setIsSelectOpen((prev) => !prev);
-
-
+  
   useEffect(() => {
     setButtons(type);
   }, [type]);
@@ -38,6 +36,11 @@ const Header = ({ title, type }) => {
   const handleGoBack = () => {
     navigate(-1);
   };
+
+  const gymOptions = [
+  { value: 'option1', label: '강남 헬스장' },
+  { value: 'option2', label: '송파 헬스장' },
+];
 
   return (
     <header>
@@ -49,7 +52,10 @@ const Header = ({ title, type }) => {
         )}
 
         {buttons[1] === '1' && (
-          <></>
+          <CustomSelect
+            options={gymOptions}
+            onChange={(option) => console.log('선택된 값:', option.value)}
+          />
         )}
       </div>
 
