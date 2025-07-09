@@ -34,3 +34,118 @@ section {
     letter-spacing: -0.025em;
 }
 /* mainBanner E: */
+
+/* memberShip S: */
+.memberShip {
+    margin-top: 30px;
+}
+
+.memberShip .drop-panel-container {
+    width: 100%;
+    background-color: var(--form-fill-disabled);
+    border-radius: 0.5em;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.102);
+    overflow: hidden;
+}
+
+.memberShip .drop-panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.1em 6%;
+}
+
+.memberShip .header-content {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.memberShip .header-content .member {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.memberShip .header-content .member .name {
+    color: #ececec;
+}
+
+.memberShip .header-content .member .tag_box {
+    display: flex;
+    gap: 8px;
+}
+
+.memberShip .header-content .member .tag_box .tag {
+    padding: 3px 4px;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 0.5em;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+}
+
+.memberShip .header-content .member .tag_box .tag.type1 {
+    border: 1px solid var(--primary-green);
+    color: var(--neutral-black-50);
+}
+
+.memberShip .header-content .member .tag_box .tag.type2 {
+    background-color: #779881;
+    color: var(--neutral-black);
+}
+
+.memberShip .header-content .date {
+    color: var(--neutral-black-400);
+}
+
+.memberShip .drop-panel-content-wrapper {
+    background-color: var(--btn-choose-disabled);
+    transform: translateY(-5px);
+    transition: height 0.4s cubic-bezier(0.25, 1, 0.5, 1),
+                opacity 0.3s ease,
+                transform 0.3s ease;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.memberShip .drop-panel-content-wrapper.open {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.memberShip .drop-panel-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0.75em 6%;
+}
+
+.memberShip .drop-panel-content .info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.memberShip .drop-panel-content .info-row span {
+    font-weight: 400;
+    font-size: 0.8125em;
+    color: var(--neutral-black-50);
+    line-height: 1.4;
+    letter-spacing: -0.025em;
+}
+
+.memberShip .drop-panel-content .info-row .index {
+    font-weight: 600;
+}
+
+.memberShip .drop-panel-content .info-row .date {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.memberShip .drop-panel-content .info-row .date .green {
+    color: var(--primary-green);
+}
+/* memberShip E: */

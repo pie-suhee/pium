@@ -1,8 +1,18 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 
 const CustomSelect = ({ options, onChange }) => {
     const [selected, setSelected] = useState(options[0]);
     const [open, setOpen] = useState(false);
+    const [height, setHeight] = useState(0);
+    const contentRef = useRef(null);
+
+    useEffect(() => {
+        if (open && contentRef.current) {
+          setHeight(contentRef.current.scrollHeight);
+        } else {
+          setHeight(0);
+        }
+      }, [open]);
 
     const handleSelect = (option) => {
         setSelected(option);
@@ -23,7 +33,11 @@ const CustomSelect = ({ options, onChange }) => {
                 </div>
             </div>
 
-            <ul className={`custom-select-options ${open ? 'open' : ''}`}>
+            <ul 
+                className={`custom-select-options ${open ? 'open' : ''}`}
+                style={{height: `${height}px`}}
+                ref={contentRef}
+            >
                 {options.map((opt, i) => (
                     <li key={i} onClick={() => handleSelect(opt)}>
                         {opt.label}

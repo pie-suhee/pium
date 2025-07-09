@@ -33,6 +33,9 @@
   --primary-yellow-200: #fff292;
   --primary-yellow-100: #fff7be;
   --primary-yellow-50: #fffce5;
+
+  --form-fill-disabled: #363636;
+  --btn-choose-disabled: #585858;
 }
 
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
@@ -152,6 +155,13 @@ body {
   font-size: 0.625em;
   line-height: 1.4;
   letter-spacing: -0.025em;
+}
+
+.caption2_1 {
+  font-weight: 400;
+  font-size: 0.5em;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
 }
 
 .number_13_medium {

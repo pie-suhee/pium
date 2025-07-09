@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
-import CustomSelect from './selectOption/CustomSelect';
+import CustomSelect from './select/CustomSelect';
 
 import '../css/Header.css';
 
@@ -26,7 +26,7 @@ const Header = ({ title, type }) => {
   */
 
   const [buttons, setButtons] = useState([]);
-  
+
   useEffect(() => {
     setButtons(type);
   }, [type]);
