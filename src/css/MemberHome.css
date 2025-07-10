@@ -149,3 +149,51 @@ section {
     color: var(--primary-green);
 }
 /* memberShip E: */
+
+/* schedule S: */
+.schedule {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.schedule .link_box {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.schedule .link_box span {
+    color: var(--neutral-black-50);
+}
+
+.schedule article {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.schedule article .time {
+    color: var(--primary-green);
+}
+
+.schedule article .schedule_box {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 1em 6%;
+    background-color: #44504B;
+    border: 1px solid var(--primary-green);
+    border-radius: 0.5em;
+    box-shadow: 0px 0px 2.18px 0px rgba(0, 0, 0, 0.102);
+}
+
+.schedule article .schedule_box .title {
+    color: var(--neutral-black-100);
+}
+
+.schedule article .schedule_box .detail {
+    color: var(--neutral-black-50);
+}
+/* schedule E: */

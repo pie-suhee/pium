@@ -22,6 +22,7 @@ function MemberHome() {
           <img src={require(`../assets/img/member/home/member_char.svg`).default} alt="회원 캐릭터" />
         </div>
       </section>
+
       <section className="memberShip">
         <DropPanel>
           <DropPanel.Header>
@@ -56,6 +57,27 @@ function MemberHome() {
             </div>
           </DropPanel.Content>
         </DropPanel>
+      </section>
+
+      <section className="schedule">
+        <div className="link_box">
+          <span className="body_16_bold">나의 스케줄</span>
+          <div className="arrow">
+            <img src={require(`../assets/img/link_icon.svg`).default} alt="이동 화살표" />
+          </div>
+        </div>
+
+        <article>
+          <span className="time caption_14_bold">오후 1:00</span>
+          <div className="schedule_box">
+            <div className="title body_16_bold">
+              개인 PT 10시 ~ 11시 수업
+            </div>
+            <div className="detail caption_14">
+              오전 10:00 - 11:00 (1시간)
+            </div>
+          </div>
+        </article>
       </section>
     </>
   );

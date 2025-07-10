@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect, useRef } from "react";
 import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
 import MemberHome from './pages/MemberHome';
 import Main from './pages/Main';
@@ -11,6 +11,7 @@ import Popup from './pages/Popup';
 
 const AppRoutes = () => {
     const location = useLocation();
+    const guideRef = useRef(null);
     const parts = location.pathname.split("/");
 
     /* 트레이너 / 회원 구분 S: */
@@ -45,9 +46,19 @@ const AppRoutes = () => {
     }
     /* 푸터 버튼 on/off 구분 E: */
 
+    /* 푸터 높이만큼 전체 높이 추가 S: */
+    useEffect(() => {
+        const footer = document.querySelector('footer');
+        if (guideRef.current && footer) {
+            const footerHeight = footer.offsetHeight;
+            guideRef.current.style.paddingBottom = `calc(${footerHeight}px + 20px)`;
+        }
+    }, [location.pathname]);
+    /* 푸터 높이만큼 전체 높이 추가 E: */
+
     return (
         <main id="main">
-            <div className="guide">
+            <div className="guide" ref={guideRef}>
                 <Routes>
                     <Route path="/" element={<Main />} />
                     <Route path="/test" element={<Test />} />
