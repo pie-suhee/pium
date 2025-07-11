@@ -164,6 +164,12 @@ body {
   letter-spacing: -0.01em;
 }
 
+.number_16 {
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
 .number_13_medium {
   font-weight: 500;
   font-size: 0.8125em;

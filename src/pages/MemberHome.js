@@ -88,7 +88,39 @@ function MemberHome() {
           </div>
         </div>
 
-        <article>
+        <article className="record_list">
+          <ul>
+            <li>
+              <div className="title">
+                <span className="num body_16_bold">1</span>
+                <span className="body_16">어깨 - 오버헤드 프레스 3세트</span>
+              </div>
+              <div className="value">
+                <span className="body_16">6 kg x 8회</span>
+                <span className="number_16">144 kg</span>
+              </div>
+            </li>
+            <li>
+              <div className="title">
+                <span className="num body_16_bold">2</span>
+                <span className="body_16">어깨 - 오버헤드 프레스 3세트</span>
+              </div>
+              <div className="value">
+                <span className="body_16">6 kg x 8회</span>
+                <span className="number_16">144 kg</span>
+              </div>
+            </li>
+            <li>
+              <div className="title">
+                <span className="num body_16_bold">3</span>
+                <span className="body_16">어깨 - 오버헤드 프레스 3세트</span>
+              </div>
+              <div className="value">
+                <span className="body_16">6 kg x 8회</span>
+                <span className="number_16">144 kg</span>
+              </div>
+            </li>
+          </ul>
         </article>
       </section>
     </>

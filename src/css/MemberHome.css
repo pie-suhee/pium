@@ -202,4 +202,58 @@ section {
 .record {
     margin-top: 20px;
 }
+
+.record .record_list {
+    margin-top: 16px;
+}
+
+.record .record_list ul {
+    padding: 1.1em 6% 1.2em;
+    background-color: #494949;
+    border-radius: 0.5em;
+}
+
+.record .record_list ul li {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.record .record_list ul li .title {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.record .record_list ul li .title span {
+    color: var(--neutral-black-50);
+}
+
+.record .record_list ul li .value {
+    display: flex;
+    justify-content: space-between;
+}
+
+.record .record_list ul li .value span {
+    color: var(--neutral-black-300);
+}
+
+.record .record_list ul li .value .number_16 {
+    color: var(--primary-green);
+}
+
+.record .record_list ul li + li {
+    margin-top: 2em;
+    position: relative;
+}
+
+.record .record_list ul li + li::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: var(--neutral-black-600);
+    position: absolute;
+    top: -0.9em;
+    /* transform: translateY(-100%); */
+}
 /* record E: */
