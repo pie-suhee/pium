@@ -19,7 +19,8 @@ footer {
   border-top: 1px solid var(--neutral-black-700);
   position: fixed;
   bottom: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 footer.trainer,

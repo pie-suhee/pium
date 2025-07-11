@@ -4,6 +4,16 @@ section {
     margin: 0 auto;
 }
 
+.link_box {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.link_box span {
+    color: var(--neutral-black-50);
+}
+
 /* mainBanner S: */
 .mainBanner {
     margin-top: 20px;
@@ -158,16 +168,6 @@ section {
     gap: 16px;
 }
 
-.schedule .link_box {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-}
-
-.schedule .link_box span {
-    color: var(--neutral-black-50);
-}
-
 .schedule article {
     display: flex;
     flex-direction: column;
@@ -197,3 +197,9 @@ section {
     color: var(--neutral-black-50);
 }
 /* schedule E: */
+
+/* record S: */
+.record {
+    margin-top: 20px;
+}
+/* record E: */

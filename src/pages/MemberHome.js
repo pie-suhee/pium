@@ -79,6 +79,18 @@ function MemberHome() {
           </div>
         </article>
       </section>
+
+      <section className="record">
+        <div className="link_box">
+          <span className="body_16_bold">나의 운동 기록</span>
+          <div className="arrow">
+            <img src={require(`../assets/img/link_icon.svg`).default} alt="이동 화살표" />
+          </div>
+        </div>
+
+        <article>
+        </article>
+      </section>
     </>
   );
 }
