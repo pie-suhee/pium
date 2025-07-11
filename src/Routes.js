@@ -46,16 +46,6 @@ const AppRoutes = () => {
     }
     /* 푸터 버튼 on/off 구분 E: */
 
-    /* 푸터 높이만큼 전체 높이 추가 S: */
-    useEffect(() => {
-        const footer = document.querySelector('footer');
-        if (guideRef.current && footer) {
-            const footerHeight = footer.offsetHeight;
-            guideRef.current.style.paddingBottom = `calc(${footerHeight}px + 20px)`;
-        }
-    }, [location.pathname]);
-    /* 푸터 높이만큼 전체 높이 추가 E: */
-
     return (
         <main id="main">
             <div className="guide" ref={guideRef}>
