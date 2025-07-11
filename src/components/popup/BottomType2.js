@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import Btns1 from "../button/Btn1";
 
 const BottomType2 = ({ title, type }) => {
     /* 
@@ -58,7 +57,7 @@ const BottomType2 = ({ title, type }) => {
                     </ul>
 
                     <div className={`button ${buttons[4] === '1' ? 'on' : ''}`}>
-                        <Btns1  btnText="계정 추가하기" type="fill" bgColor="black800" color="text-primary-white" />
+                        {/* <Btns1  btnText="계정 추가하기" type="fill" bgColor="black800" color="text-primary-white" /> */}
                     </div>
                 </div>
             </div>

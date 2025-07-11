@@ -1,5 +1,6 @@
 import Header from "../components/Header"
 import DropPanel from "../components/select/DropPanel"
+import ButtonType1 from "../components/button/ButtonType1"
 
 import '../css/MemberHome.css';
 
@@ -57,6 +58,13 @@ function MemberHome() {
             </div>
           </DropPanel.Content>
         </DropPanel>
+      </section>
+
+      <section className="startBtn">
+        <article>
+          <div className="today body_16_bold">2025년 5월 8일 목요일</div>
+          <ButtonType1 text={"오늘의 운동 시작하기"} bg={"green_1"} color={"black_1"} />
+        </article>
       </section>
 
       <section className="schedule">

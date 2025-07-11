@@ -1,110 +1,13 @@
-/* 공통 */
+.bg_green_1 {
+    background-color: var(--primary-green);
+}
+
+.c_black_1 {
+    color: var(--neutral-black-800);
+}
+
 .btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    height: 60px;
-    padding: 12px 20px;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    border: none;
-}
-
-.btn span {
-    font-size: inherit;
-    font-weight: inherit;
-}
-
-
-/* BtnRound */
-.btn.BtnRound {
-    width: 56px;
-    height: 40px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 140%;
-    text-align: center;
-    padding: unset;
-    border-radius: 50px;
-
-    color: rgba(0, 210, 130, 1);
-    border: 1px solid rgba(0, 210, 130, 1);
-}
-
-/* 크기 */
-.btn_full {
     width: 100%;
-    /* 해당 부분 추가: 수희 */
-    max-width: 345px;
-    /* 해당 부분 수정: 수희 */
-    padding: 8px 16px;
-}
-
-.btn_half {
-    padding: 12px 20px;
-}
-
-
-/* 타입 */
-.btn_fill {
-    background-color: #4ade80;
-    color: black;
-}
-
-.btn_line {
-    background-color: transparent;
-    border: 1px solid #4ade80;
-    color: #4ade80;
-}
-
-/* 버튼 배경 색상 */
-.btn_gray {
-    background-color: #ccc;
-    color: #333;
-}
-
-.btn_black {
-    background-color: #000;
-    color: #fff;
-}
-
-.btn_black800 {
-    background-color: rgba(38, 38, 38, 1);
-}
-
-.btn_green {
-    background-color: #4ade80;
-}
-
-
-/* 버튼 텍스트 색상 */
-.btn_txt_black {
-    color: #000;
-}
-
-.btn_txt_white {
-    color: #fff;
-}
-
-/* 비활성화 */
-.btn_disabled {
-    cursor: unset;
-    background-color: #e0e0e0 !important;
-    color: #999 !important;
-    border: none !important;
-}
-
-.btn.BtnRound.btn_disabled {
-    cursor: unset;
-    background-color: transparent !important;
-    color: rgba(123, 123, 123, 1) !important;
-    border: 1px solid rgba(123, 123, 123, 1) !important;
-}
-
-/* 아이콘 */
-.btn_icon {
-    margin-right: 6px;
-    display: inline-flex;
+    height: 2.45em;
+    border-radius: 0.4em;
 }

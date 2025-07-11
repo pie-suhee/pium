@@ -3,7 +3,6 @@ import MemberHome from './pages/MemberHome';
 import Main from './pages/Main';
 import Test from './pages/Test';
 import Footer from './components/Footer';
-import BtnTest from './pages/BtnTest';
 import Popup from './pages/Popup';
 
 
@@ -53,7 +52,6 @@ const AppRoutes = () => {
                     <Route path="/trainer/home" element={<Main />} />
                     <Route path="/member/home" element={<MemberHome />} />
                     <Route path="/trainer/schedule" element={<Test />} />
-                    <Route path="/btn" element={<BtnTest />} />
                     <Route path="/popup" element={<Popup />} />
                 </Routes>
             </div>
