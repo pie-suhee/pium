@@ -68,8 +68,8 @@ const AppRoutes = () => {
                     <Route path="/btn" element={<BtnTest />} />
                     <Route path="/popup" element={<Popup />} />
                 </Routes>
-                <Footer type={{ userType, footerType }} />
             </div>
+            <Footer type={{ userType, footerType }} />
         </main>
     );
 };
