@@ -1,4 +1,3 @@
-import { useEffect, useRef } from "react";
 import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
 import MemberHome from './pages/MemberHome';
 import Main from './pages/Main';
@@ -11,7 +10,6 @@ import Popup from './pages/Popup';
 
 const AppRoutes = () => {
     const location = useLocation();
-    const guideRef = useRef(null);
     const parts = location.pathname.split("/");
 
     /* 트레이너 / 회원 구분 S: */
@@ -48,7 +46,7 @@ const AppRoutes = () => {
 
     return (
         <main id="main">
-            <div className="guide" ref={guideRef}>
+            <div className="guide">
                 <Routes>
                     <Route path="/" element={<Main />} />
                     <Route path="/test" element={<Test />} />
