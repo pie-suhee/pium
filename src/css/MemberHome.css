@@ -219,14 +219,16 @@ section {
 }
 
 .calendar .day .plan {
+    display: none;
     width: 4px;
     aspect-ratio: 1/1;
+    background-color: var(--primary-yellow);
     margin-top: 16px;
     border-radius: 50%;
 }
 
 .calendar .day .plan.isplan {
-    background-color: var(--primary-yellow);
+    display: block;
 }
 /* calendar E: */
 
