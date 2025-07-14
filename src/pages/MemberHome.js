@@ -1,8 +1,8 @@
 import { useSelector } from "react-redux";
 
-import Header from "../components/Header"
-import DropPanel from "../components/select/DropPanel"
-import ButtonType1 from "../components/button/ButtonType1"
+import Header from "../components/Header";
+import DropPanel from "../components/select/DropPanel";
+import ButtonType1 from "../components/button/ButtonType1";
 
 import '../css/MemberHome.css';
 

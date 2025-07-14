@@ -29,6 +29,20 @@ section {
     padding: 1.1em 6%;
 }
 
+.drop-panel-content-wrapper {
+    transform: translateY(-5px);
+    transition: height 0.4s cubic-bezier(0.25, 1, 0.5, 1),
+                opacity 0.3s ease,
+                transform 0.3s ease;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.drop-panel-content-wrapper.open {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* mainBanner S: */
 .mainBanner {
     margin-top: 20px;
@@ -111,17 +125,6 @@ section {
 
 .memberShip .drop-panel-content-wrapper {
     background-color: var(--btn-choose-disabled);
-    transform: translateY(-5px);
-    transition: height 0.4s cubic-bezier(0.25, 1, 0.5, 1),
-                opacity 0.3s ease,
-                transform 0.3s ease;
-    opacity: 0;
-    overflow: hidden;
-}
-
-.memberShip .drop-panel-content-wrapper.open {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 .memberShip .drop-panel-content {
