@@ -8,7 +8,15 @@ import '../css/MemberHome.css';
 
 
 function MemberHome() {
-  const { year, month, day, dayOfWeek, weekOfMonth } = useSelector(state => state.date);
+  const { year, month, date, day, dayOfWeek, weekOfMonth } = useSelector(state => state.date);
+
+  const startOfWeek = date - day;
+
+  const days = Array.from({ length: 7 }, (_, i) => {
+    const d = new Date(startOfWeek);
+    d.setDate(startOfWeek + i);
+    return d;
+  });
 
   return (
     <>
@@ -74,6 +82,20 @@ function MemberHome() {
           </DropPanel.Header>
 
           <DropPanel.Content>
+            <ul className="week">
+              {days.map((day, i) => {
+                const isToday = day.getDate() === date;
+                const weeks = ['일', '월', '화', '수', '목', '금', '토'];
+                
+                return (
+                  <li key={day.toISOString()} className={`day${isToday ? ' today' : ''}`}>
+                    <div className="text caption_15_medium">{weeks[i]}</div>
+                    <div className="num">{day.getDate()}</div>
+                    <div className="plan"></div>
+                  </li>
+                );
+              })}
+            </ul>
           </DropPanel.Content>
         </DropPanel>
       </section>
@@ -81,7 +103,7 @@ function MemberHome() {
       <section className="startBtn">
         <article>
           <div className="today body_16_bold">
-            {`${year}년 ${month}월 ${day}일 ${dayOfWeek}`}
+            {`${year}년 ${month}월 ${date}일 ${dayOfWeek}`}
           </div>
           <ButtonType1 text={"오늘의 운동 시작하기"} bg={"green_1"} color={"black_1"} />
         </article>

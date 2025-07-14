@@ -171,6 +171,63 @@ section {
 .calendar .header-content {
     color: var(--neutral-black-50);
 }
+
+.calendar .drop-panel-content {
+    padding: 0.75em 6% 1.5em;
+}
+
+.calendar .week {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calendar .day {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendar .day .text {
+    color: var(--neutral-black-300);
+}
+
+.calendar .day.today .text {
+    color: var(--primary-green);
+}
+
+.calendar .day .num {
+    width: 2em;
+    aspect-ratio: 1/1;
+    margin-top: 1.25em;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 1em;
+    color: #b4b8c0;
+    line-height: 1;
+    letter-spacing: -0.025em;
+}
+
+.calendar .day.today .num {
+    background-color: var(--primary-green);
+    color: var(--neutral-black-800);
+    font-weight: 600;
+}
+
+.calendar .day .plan {
+    width: 4px;
+    aspect-ratio: 1/1;
+    margin-top: 16px;
+    border-radius: 50%;
+}
+
+.calendar .day .plan.isplan {
+    background-color: var(--primary-yellow);
+}
 /* calendar E: */
 
 /* startBtn S: */
