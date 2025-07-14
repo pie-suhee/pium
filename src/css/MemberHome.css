@@ -14,6 +14,21 @@ section {
     color: var(--neutral-black-50);
 }
 
+.drop-panel-container {
+    width: 100%;
+    background-color: var(--form-fill-disabled);
+    border-radius: 0.5em;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.102);
+    overflow: hidden;
+}
+
+.drop-panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.1em 6%;
+}
+
 /* mainBanner S: */
 .mainBanner {
     margin-top: 20px;
@@ -48,21 +63,6 @@ section {
 /* memberShip S: */
 .memberShip {
     margin-top: 30px;
-}
-
-.memberShip .drop-panel-container {
-    width: 100%;
-    background-color: var(--form-fill-disabled);
-    border-radius: 0.5em;
-    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.102);
-    overflow: hidden;
-}
-
-.memberShip .drop-panel-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.1em 6%;
 }
 
 .memberShip .header-content {
@@ -159,6 +159,16 @@ section {
     color: var(--primary-green);
 }
 /* memberShip E: */
+
+/* calendar S: */
+.calendar {
+    margin-top: 20px;
+}
+
+.calendar .header-content {
+    color: var(--neutral-black-50);
+}
+/* calendar E: */
 
 /* startBtn S: */
 .startBtn {

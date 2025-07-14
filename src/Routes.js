@@ -1,11 +1,8 @@
 import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
 import MemberHome from './pages/MemberHome';
 import Main from './pages/Main';
-import Test from './pages/Test';
 import Footer from './components/Footer';
 import Popup from './pages/Popup';
-
-
 
 const AppRoutes = () => {
     const location = useLocation();
@@ -48,10 +45,8 @@ const AppRoutes = () => {
             <div className="guide">
                 <Routes>
                     <Route path="/" element={<Main />} />
-                    <Route path="/test" element={<Test />} />
                     <Route path="/trainer/home" element={<Main />} />
                     <Route path="/member/home" element={<MemberHome />} />
-                    <Route path="/trainer/schedule" element={<Test />} />
                     <Route path="/popup" element={<Popup />} />
                 </Routes>
             </div>

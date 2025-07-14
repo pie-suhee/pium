@@ -1,41 +1,34 @@
 import { configureStore, createSlice } from '@reduxjs/toolkit';
-import { useId } from 'react';
 
-let user = createSlice({
-  name: 'user',
+const now = new Date();
+const days = ['일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일'];
+const weeks = ['첫', '둘', '셋', "넷", "다섯"];
+
+let date = createSlice({
+  name: 'date',
   initialState: {
-    name: 'anonymous',
-    loginId: 'anonymous',
-    role: 'ROLE_ANONYMOUS',
+    year: now.getFullYear(),
+    month: now.getMonth() + 1,
+    day: now.getDate(),
+    dayOfWeek: days[now.getDay()],
+    weekOfMonth: weeks[Math.ceil(now.getDate() / 7)],
   },
   reducers: {
-    changeUser(state, action) {
-      state.name = action.payload.name;
-      state.loginId = action.payload.loginId;
-      state.role = action.payload.role;
+    setDate(state, action) {
+      state.year = action.payload.year;
+      state.month = action.payload.month;
+      state.day = action.payload.day;
+      state.dayOfWeek = action.payload.dayOfWeek;
+      state.weekOfMonth = action.payload.weekOfMonth;
     },
   },
 });
 
-export let { changeUser } = user.actions;
+export let { setDate } = date.actions;
 
-let age = createSlice({
-  name: 'age',
-  initialState: {
-    age: 0,
-  },
-  reducers: {
-    changeAge(state, action) {
-      state.age = action.payload.age;
-    },
-  },
-});
-
-export let { changeAge } = age.actions;
 
 export default configureStore({
   reducer: {
-    user: user.reducer,
-    age: age.reducer,
+    date: date.reducer,
   },
 });

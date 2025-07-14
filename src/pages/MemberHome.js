@@ -1,10 +1,15 @@
+import { useSelector } from "react-redux";
+
 import Header from "../components/Header"
 import DropPanel from "../components/select/DropPanel"
 import ButtonType1 from "../components/button/ButtonType1"
 
 import '../css/MemberHome.css';
 
+
 function MemberHome() {
+  const { year, month, day, dayOfWeek, weekOfMonth } = useSelector(state => state.date);
+
   return (
     <>
       <Header title="멘트" type="0100000000000001" />
@@ -60,9 +65,24 @@ function MemberHome() {
         </DropPanel>
       </section>
 
+      <section className="calendar">
+        <DropPanel>
+          <DropPanel.Header>
+            <div className="header-content body_16_bold">
+              {`${year}년 ${month}월 ${weekOfMonth}째 주`}
+            </div>
+          </DropPanel.Header>
+
+          <DropPanel.Content>
+          </DropPanel.Content>
+        </DropPanel>
+      </section>
+
       <section className="startBtn">
         <article>
-          <div className="today body_16_bold">2025년 5월 8일 목요일</div>
+          <div className="today body_16_bold">
+            {`${year}년 ${month}월 ${day}일 ${dayOfWeek}`}
+          </div>
           <ButtonType1 text={"오늘의 운동 시작하기"} bg={"green_1"} color={"black_1"} />
         </article>
       </section>
