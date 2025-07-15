@@ -12,7 +12,7 @@ const dateSlice = createSlice({
         date: now.getDate(),
         day: now.getDay(),
         dayOfWeek: days[now.getDay()],
-        weekOfMonth: weeks[Math.ceil(now.getDate() / 7)],
+        weekOfMonth: weeks[getWeekOfMonth(now) - 1],
     },
     reducers: {
         setDate(state, action) {
@@ -25,6 +25,13 @@ const dateSlice = createSlice({
         },
     },
 });
+
+function getWeekOfMonth(date) {
+  const startOfMonth = new Date(date.getFullYear(), date.getMonth(), 1);
+  const startDay = startOfMonth.getDay();
+  const offsetDate = date.getDate() + startDay;
+  return Math.ceil(offsetDate / 7);
+}
 
 // export let { setDate } = dateSlice.actions;
 
