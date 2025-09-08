@@ -60,63 +60,89 @@ const Header = ({ title, type }) => {
       </div>
 
       <div className='mid'>
-        <span className={`headerBtn body_18 ${buttons[2] === '1' ? 'on' : ''}`}>{title}</span>
+        {buttons[2] === '1' && (
+          <span className='headerBtn body_18'>{title}</span>
+        )}
       </div>
 
       <div className='right'>
-        <Link to="/" className={`headerBtn taBtn ${buttons[4] === '1' ? 'on' : ''}`}>
-          <div className='taBtn'>
-            <span className='caption_12_medium'>둘러볼래요</span>
-            <img src="/img/header/rightArrowBtn.svg" alt="오른쪽 화살표 아이콘" />
-          </div>
-        </Link>
+        {buttons[4] === '1' && (
+          <Link to="/error" className='headerBtn taBtn'>
+            <div className='taBtn'>
+              <span className='caption_12_medium'>둘러볼래요</span>
+              <img src="/img/header/rightArrowBtn.svg" alt="오른쪽 화살표 아이콘" />
+            </div>
+          </Link>
+        )}
 
-        <Link to="/" className={`headerBtn ${buttons[5] === '1' ? 'on' : ''}`}>
-          <div className='taBtn'>
-            <span className='caption_12_medium'>문의하기</span>
-            <img src="/img/header/rightArrowBtn.svg" alt="오른쪽 화살표 아이콘" />
-          </div>
-        </Link>
+        {buttons[5] === '1' && (
+          <Link to="/error" className='headerBtn'>
+            <div className='taBtn'>
+              <span className='caption_12_medium'>문의하기</span>
+              <img src="/img/header/rightArrowBtn.svg" alt="오른쪽 화살표 아이콘" />
+            </div>
+          </Link>
+        )}
 
-        <Link to="/" className={`headerBtn ${buttons[6] === '1' ? 'on' : ''}`}>
-          <img src="/img/header/pencilBtn.svg" alt="연필 아이콘" />
-        </Link>
+        {buttons[6] === '1' && (
+          <Link to="/error" className='headerBtn'>
+            <img src="/img/header/pencilBtn.svg" alt="연필 아이콘" />
+          </Link>
+        )}
 
-        <Link to="/" className={`headerBtn ${buttons[7] === '1' ? 'on' : ''}`}>
-          <img src="/img/header/plusBtn.svg" alt="추가 아이콘" />
-        </Link>
+        {buttons[7] === '1' && (
+          <Link to="/error" className='headerBtn'>
+            <img src="/img/header/plusBtn.svg" alt="추가 아이콘" />
+          </Link>
+        )}
 
-        <Link to="/" className={`headerBtn ${buttons[8] === '1' ? 'on' : ''}`}>
-          <img src="/img/header/searchBtn.svg" alt="검색 아이콘" />
-        </Link>
+        {buttons[8] === '1' && (
+          <Link to="/error" className='headerBtn'>
+            <img src="/img/header/searchBtn.svg" alt="검색 아이콘" />
+          </Link>
+        )}
 
-        <Link to="/" className={`headerBtn ${buttons[9] === '1' ? 'on' : ''}`}>
-          <img src="/img/header/fileBoxBtn.svg" alt="파일함 아이콘" />
-        </Link>
+        {buttons[9] === '1' && (
+          <Link to="/error" className='headerBtn'>
+            <img src="/img/header/fileBoxBtn.svg" alt="파일함 아이콘" />
+          </Link>
+        )}
 
-        <Link to="/" className={`headerBtn ${buttons[10] === '1' ? 'on' : ''}`}>
-          <img src="/img/header/chartBtn.svg" alt="차트 아이콘" />
-        </Link>
+        {buttons[10] === '1' && (
+          <Link to="/error" className='headerBtn'>
+            <img src="/img/header/chartBtn.svg" alt="차트 아이콘" />
+          </Link>
+        )}
+        
+        {buttons[11] === '1' && (
+          <Link to="/error" className='headerBtn'>
+            <img src="/img/header/settingBtn.svg" alt="설정 아이콘" />
+          </Link>
+        )}
 
-        <Link to="/" className={`headerBtn ${buttons[11] === '1' ? 'on' : ''}`}>
-          <img src="/img/header/settingBtn.svg" alt="설정 아이콘" />
-        </Link>
+        {buttons[12] === '1' && (
+          <Link to="/error" className='headerBtn'>
+            <img src="/img/header/menuBtn.svg" alt="메뉴 아이콘" />
+          </Link>
+        )}
 
-        <Link to="/" className={`headerBtn ${buttons[12] === '1' ? 'on' : ''}`}>
-          <img src="/img/header/menuBtn.svg" alt="메뉴 아이콘" />
-        </Link>
+        {buttons[13] === '1' && (
+          <Link to="/error" className='headerBtn'>
+            <span className='greenText'>완료</span>
+          </Link>
+        )}
 
-        <Link to="/" className={`headerBtn ${buttons[13] === '1' ? 'on' : ''}`}>
-          <span className='greenText'>완료</span>
-        </Link>
+        {buttons[14] === '1' && (
+          <Link to="/error" className='headerBtn'>
+            <span className='greenText'>삭제</span>
+          </Link>
+        )}
 
-        <Link to="/" className={`headerBtn ${buttons[14] === '1' ? 'on' : ''}`}>
-          <span className='greenText'>삭제</span>
-        </Link>
-
-        <Link to="/" className={`headerBtn ${buttons[15] === '1' ? 'on' : ''}`}>
-          <img src="/img/header/alarmOffBtn.svg" alt="알람 아이콘" />
-        </Link>
+        {buttons[15] === '1' && (
+          <Link to="/error" className='headerBtn'>
+            <img src="/img/header/alarmOffBtn.svg" alt="알람 아이콘" />
+          </Link>
+        )}
       </div>
     </header>
   );

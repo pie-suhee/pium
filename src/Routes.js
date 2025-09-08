@@ -3,6 +3,7 @@ import MemberHome from './pages/MemberHome';
 import Main from './pages/Main';
 import Footer from './components/Footer';
 import Popup from './pages/Popup';
+import Error from './pages/Error';
 
 const AppRoutes = () => {
     const location = useLocation();
@@ -48,6 +49,7 @@ const AppRoutes = () => {
                     <Route path="/trainer/home" element={<Main />} />
                     <Route path="/member/home" element={<MemberHome />} />
                     <Route path="/popup" element={<Popup />} />
+                    <Route path="/error" element={<Error />} />
                 </Routes>
             </div>
             <Footer type={{ userType, footerType }} />

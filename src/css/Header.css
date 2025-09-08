@@ -109,11 +109,11 @@ header .custom-select-selected + ul li {
   cursor: pointer;
 }
 
-header .headerBtn {
+/* header .headerBtn {
   display: none;
 }
 
 header .headerBtn.on{
   display: block;
-}
+} */
 /* header E: */
