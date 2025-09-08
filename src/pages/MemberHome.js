@@ -44,7 +44,7 @@ function MemberHome() {
               <div className="member">
                 <div className="name body_16_bold">김지우</div>
                 <div className="tag_box">
-                  <span className="tag type1">11PT</span>
+                  <span className="tag type1">1:1PT</span>
                   <span className="tag type2">12개월 프리패스</span>
                 </div>
               </div>
