@@ -1,5 +1,6 @@
 @import url(./reset.css);
 @import url(./_system.css);
+@import url(./char.css);
 
 #main {
   display: flex;
