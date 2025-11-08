@@ -1,4 +1,5 @@
-import '../../css/Popup.css';
+import { PopupSection } from '../../style/Popup.styles.js';
+
 import BottomType1 from './BottomType1';
 import BottomType2 from './BottomType2';
 import BottomType3 from './BottomType3';
@@ -18,13 +19,13 @@ const BottomPopup = ({ type, text, code }) => {
     };
 
     return (
-        <>
+        <PopupSection>
             <div className='popupBack'></div>
             
             <div className='bottomPopup'>
                 {renderContent()}
             </div>
-        </>
+        </PopupSection>
     );
 };
 

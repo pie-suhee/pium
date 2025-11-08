@@ -1,0 +1,96 @@
+import styled from 'styled-components';
+
+export const ToggleBtnSection = styled.section`
+    .toggle_box {
+        background-color: #434343;
+        border-radius: 10px;
+        padding: 0px 22px;
+        margin-bottom: 12px;
+        height: 60px;
+        width: 345px;
+        color: white;
+        font-size: 16px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .toggle_label {
+        font-weight: 500;
+    }
+
+
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 40px;
+        height: 22px;
+    }
+
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    /* toggle */
+    .toggle {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #262626;
+        border-radius: 34px;
+        transition: 0.4s;
+    }
+
+    /* off 상태일 때 */
+    .toggle::before {
+        position: absolute;
+        content: "";
+        height: 16px;
+        width: 16px;
+        left: 4px;
+        bottom: 3px;
+        background-color: #ccc;
+        transition: 0.4s;
+        border-radius: 50%;
+    }
+
+    /* on 상태일 때(기본값) */
+    input:checked+.toggle::before {
+        transform: translateX(16px);
+    }
+
+    /* 색상별 */
+    .toggle.green::before {
+        background-color: #4cd964;
+    }
+
+    .switch input:not(:checked)+.toggle.green::before {
+        background-color: #466550;
+    }
+
+
+    .toggle.red::before {
+        background-color: #ff3b30;
+    }
+
+    .switch input:not(:checked)+.toggle.red::before {
+        background-color: #643B38;
+    }
+
+
+    .switch input:not(:checked)+.toggle {
+        /* false */
+        background-color: #262626;
+    }
+
+    .disabled {
+        opacity: 0.5;
+        pointer-events: none;
+    }
+`;

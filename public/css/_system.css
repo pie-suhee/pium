@@ -73,8 +73,22 @@ body {
   letter-spacing: -0.025em;
 }
 
+.body_18_semibold {
+  font-weight: 600;
+  font-size: 1.125em;
+  line-height: 1.4;
+  letter-spacing: -0.025em;
+}
+
 .body_16 {
   font-weight: 400;
+  font-size: 1em;
+  line-height: 1.4;
+  letter-spacing: -0.025em;
+}
+
+.body_16_semibold {
+  font-weight: 600;
   font-size: 1em;
   line-height: 1.4;
   letter-spacing: -0.025em;

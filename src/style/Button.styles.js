@@ -1,0 +1,17 @@
+import styled from 'styled-components';
+
+export const ButtonSection = styled.section`
+    .bg_green_1 {
+        background-color: var(--primary-green);
+    }
+
+    .c_black_1 {
+        color: var(--neutral-black-800);
+    }
+
+    .btn {
+        width: 100%;
+        height: 2.45em;
+        border-radius: 0.4em;
+    }
+`;
