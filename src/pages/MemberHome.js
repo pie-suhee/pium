@@ -22,7 +22,7 @@ function MemberHome() {
     <>
       <Header title="멘트" type="0100000000000001" />
       <MemberHomeSection>
-        <section className="mainBanner">
+        <section className="section mainBanner">
           <div className="text_box">
             <div className="text_t1">
               운동 시작한지 30일차
@@ -38,7 +38,7 @@ function MemberHome() {
           </div>
         </section>
 
-        <section className="memberShip">
+        <section className="section memberShip">
           <DropPanel>
             <DropPanel.Header>
               <div className="header-content">
@@ -74,7 +74,7 @@ function MemberHome() {
           </DropPanel>
         </section>
 
-        <section className="calendar">
+        <section className="section calendar">
           <DropPanel>
             <DropPanel.Header>
               <div className="header-content body_16_bold">
@@ -101,7 +101,7 @@ function MemberHome() {
           </DropPanel>
         </section>
 
-        <section className="startBtn">
+        <section className="section startBtn">
           <article>
             <div className="today body_16_bold">
               {`${year}년 ${month}월 ${date}일 ${dayOfWeek}`}
@@ -110,7 +110,7 @@ function MemberHome() {
           </article>
         </section>
 
-        <section className="schedule">
+        <section className="section schedule">
           <div className="link_box">
             <span className="body_16_bold">나의 스케줄</span>
             <div className="arrow">
@@ -131,7 +131,7 @@ function MemberHome() {
           </article>
         </section>
 
-        <section className="record">
+        <section className="section record">
           <div className="link_box">
             <span className="body_16_bold">나의 운동 기록</span>
             <div className="arrow">

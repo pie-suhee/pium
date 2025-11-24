@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 import MemberHome from './pages/MemberHome';
 import HealthNote from './pages/HealthNote';
 import Main from './pages/Main';
@@ -9,6 +10,12 @@ import Error from './pages/Error';
 const AppRoutes = () => {
     const location = useLocation();
     const parts = location.pathname.split("/");
+
+    /* 스크롤을 항상 맨 위로 이동 */
+    useEffect(() => {
+        const el = document.querySelector('.guide');
+        if (el) el.scrollTop = 0;
+    }, [location.pathname]);
 
     /* 트레이너 / 회원 구분 S: */
     let userType = "";

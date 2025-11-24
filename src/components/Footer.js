@@ -9,7 +9,7 @@ const Footer = ({ type }) => {
         <footer className={`${userType} ${footerType}`}>
             <ul>
                 <li className='home'>
-                    <Link to="/member/home">
+                    <Link to={`/${userType}/home`}>
                         <figure className={isActive('home')}>
                             <img src="/img/footer/home_off.svg" alt="홈 버튼" />
                             <img src="/img/footer/home_on.svg" alt="홈 버튼" />
@@ -27,7 +27,7 @@ const Footer = ({ type }) => {
                     </Link>
                 </li>
                 <li className='note'>
-                    <Link to="/error">
+                    <Link to={`/${userType}/note`}>
                         <figure className={isActive('note')}>
                             <img src="/img/footer/note_off.svg" alt="채팅 버튼" />
                             <img src="/img/footer/note_on.svg" alt="채팅 버튼" />

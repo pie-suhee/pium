@@ -1,51 +1,6 @@
 import styled from 'styled-components';
 
 export const MemberHomeSection = styled.section`
-  section {
-    width: 100%;
-    padding: 0 6%;
-    margin: 0 auto;
-  }
-
-  .link_box {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-  }
-
-  .link_box span {
-    color: var(--neutral-black-50);
-  }
-
-  .drop-panel-container {
-    width: 100%;
-    background-color: var(--form-fill-disabled);
-    border-radius: 0.5em;
-    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.102);
-    overflow: hidden;
-  }
-
-  .drop-panel-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.1em 6%;
-  }
-
-  .drop-panel-content-wrapper {
-    transform: translateY(-5px);
-    transition: height 0.4s cubic-bezier(0.25, 1, 0.5, 1),
-                opacity 0.3s ease,
-                transform 0.3s ease;
-    opacity: 0;
-    overflow: hidden;
-  }
-
-  .drop-panel-content-wrapper.open {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
   /* mainBanner S: */
   .mainBanner {
     margin-top: 20px;
