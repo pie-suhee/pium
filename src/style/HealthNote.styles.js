@@ -44,7 +44,7 @@ export const HealthNoteSection = styled.section`
     }
 
     .calendar .calendar-content .calendar-grid .day .date-number {
-        padding: 0 0 0.08em 0.04em;
+        padding: 0 0 0.08em 0.015em;
         color: var(--neutral-black-50);
     }
     
