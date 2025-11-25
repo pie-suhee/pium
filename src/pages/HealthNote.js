@@ -72,7 +72,7 @@ function HealthNote() {
               <ul>
                 {selectedEvents.map((ev, idx) => (
                   <li>
-                    <div className="startTime caption_14">{formatTimeWithAmPm(ev.start)}</div>
+                    <div className="startTime caption_14_bold">{formatTimeWithAmPm(ev.start)}</div>
                     <div key={idx} className="event_list">
                       <p className="title body_16_bold">{ev.title}</p>
                       <p className="time caption_14">
