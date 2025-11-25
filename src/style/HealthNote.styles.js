@@ -78,9 +78,12 @@ export const HealthNoteSection = styled.section`
     }
 
     .calendar .calendar-content .calendar-grid .day .badge {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 40%;
         aspect-ratio: 1/1;
-        padding: 0.01em 0 0 0.01em;
+        padding: 0 0 0.08em 0.015em;
         background-color: var(--secondary-red);
         border-radius: 50%;
         position: absolute;
