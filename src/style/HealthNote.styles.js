@@ -89,6 +89,36 @@ export const HealthNoteSection = styled.section`
         color: var(--neutral-black-50);
         z-index: 1;
     }
+
+    .calendar .calendar-events {
+        margin-top: 15px;
+    }
+
+    .calendar .calendar-events ul {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .calendar .calendar-events .startTime {
+        color: var(--primary-green);
+    }
+
+    .calendar .calendar-events .event_list {
+        margin-top: 5px;
+        padding: 1em 6%;
+        background-color: #44504B;
+        border: 1px solid var(--primary-green);
+        border-radius: 0.5em;
+    }
+
+    .calendar .calendar-events .event_list .title {
+        color: var(--neutral-black-100);
+    }
+
+    .calendar .calendar-events .event_list .time {
+        color: var(--neutral-black-50);
+    }
     /* calendar E: */
 
     /* body S: */
