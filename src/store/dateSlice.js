@@ -1,38 +1,45 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-const now = new Date();
-const days = ['일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일'];
-const weeks = ['첫', '둘', '셋', "넷", "다섯"];
+const getDateInfo = (dateObj) => {
+    const year = dateObj.getFullYear();
+    const month = dateObj.getMonth() + 1; // 1-12
+    const date = dateObj.getDate(); // 1-31
+    const day = dateObj.getDay(); // 0(일)-6(토)
+    
+    // YYYY-MM-DD 형식의 키 생성
+    const dateKey = `${year}-${String(month).padStart(2, "0")}-${String(date).padStart(2, "0")}`;
+    
+    // 해당 달의 며칠인지(date)를 기준으로 주차를 대략 계산
+    const weekOfMonth = Math.ceil(date / 7);
+
+    return { year, month, date, dayOfWeek: day, dateKey, weekOfMonth };
+};
+
+const initialState = getDateInfo(new Date());
 
 const dateSlice = createSlice({
-    name: 'calendar',
-    initialState: {
-        year: now.getFullYear(),
-        month: now.getMonth() + 1,
-        date: now.getDate(),
-        day: now.getDay(),
-        dayOfWeek: days[now.getDay()],
-        weekOfMonth: weeks[getWeekOfMonth(now) - 1],
-    },
+    name: 'date',
+    initialState,
     reducers: {
+        // 현재 날짜를 특정 날짜로 변경 (선택 또는 이동 시)
         setDate(state, action) {
-            state.year = action.payload.year;
-            state.month = action.payload.month;
-            state.date = action.payload.date;
-            state.day = action.payload.day;
-            state.dayOfWeek = action.payload.dayOfWeek;
-            state.weekOfMonth = action.payload.weekOfMonth;
+            // action.payload는 Date 객체여야 합니다.
+            return getDateInfo(action.payload);
+        },
+        // 주차 이동 로직 (예시)
+        moveWeek(state, action) {
+            const currentDate = new Date(state.year, state.month - 1, state.date);
+            currentDate.setDate(currentDate.getDate() + action.payload * 7); // payload: 1(다음 주) 또는 -1(이전 주)
+            return getDateInfo(currentDate);
+        },
+        // 월 이동 로직 (예시)
+        moveMonth(state, action) {
+            const currentDate = new Date(state.year, state.month - 1, state.date);
+            currentDate.setMonth(currentDate.getMonth() + action.payload); // payload: 1(다음 달) 또는 -1(이전 달)
+            return getDateInfo(currentDate);
         },
     },
 });
 
-function getWeekOfMonth(date) {
-  const startOfMonth = new Date(date.getFullYear(), date.getMonth(), 1);
-  const startDay = startOfMonth.getDay();
-  const offsetDate = date.getDate() + startDay;
-  return Math.ceil(offsetDate / 7);
-}
-
-// export let { setDate } = dateSlice.actions;
-
+export const { setDate, moveWeek, moveMonth } = dateSlice.actions;
 export default dateSlice.reducer;

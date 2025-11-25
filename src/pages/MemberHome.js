@@ -1,4 +1,5 @@
 import { useSelector } from "react-redux";
+import { getWeeklyDates } from '../utils/dateCalculations.js';
 
 import Header from "../components/Header";
 import DropPanel from "../components/select/DropPanel";
@@ -8,15 +9,14 @@ import { MemberHomeSection } from '../style/MemberHome.styles.js';
 
 
 function MemberHome() {
-  const { year, month, date, day, dayOfWeek, weekOfMonth } = useSelector(state => state.date);
+  // Redux에서 날짜 정보 가져오기
+  const { year, month, date, dayOfWeek, weekOfMonth } = useSelector(state => state.date);
 
-  const startOfWeek = date - day;
+  // 로컬 계산 로직 제거, 유틸리티 함수를 사용해 days 배열 생성
+  const days = getWeeklyDates(year, month, date, dayOfWeek);
 
-  const days = Array.from({ length: 7 }, (_, i) => {
-    const d = new Date(startOfWeek);
-    d.setDate(startOfWeek + i);
-    return d;
-  });
+  const week = ['일', '월', '화', '수', '목', '금', '토'];
+  const kWeek = ["첫", "둘", "셋", "넷", "다섯"];
 
   return (
     <>
@@ -74,24 +74,32 @@ function MemberHome() {
           </DropPanel>
         </section>
 
+        <section className="section startBtn">
+          <article>
+            <div className="today body_16_bold">
+              {`${year}년 ${month}월 ${date}일 ${week[dayOfWeek]}요일`}
+            </div>
+            <ButtonType1 text={"오늘의 운동 시작하기"} bg={"green_1"} color={"black_1"} />
+          </article>
+        </section>
+
         <section className="section calendar">
           <DropPanel>
             <DropPanel.Header>
               <div className="header-content body_16_bold">
-                {`${year}년 ${month}월 ${weekOfMonth}째 주`}
+                {`${year}년 ${month}월 ${kWeek[weekOfMonth]}째 주`}
               </div>
             </DropPanel.Header>
 
             <DropPanel.Content>
               <ul className="week">
-                {days.map((day, i) => {
-                  const isToday = day.getDate() === date;
-                  const weeks = ['일', '월', '화', '수', '목', '금', '토'];
+                {days.map((dayObj, i) => {
+                  const isToday = dayObj.getDate() === date;
                   
                   return (
-                    <li key={day.toISOString()} className={`day${isToday ? ' today' : ''}`}>
-                      <div className="text caption_15_medium">{weeks[i]}</div>
-                      <div className="num">{day.getDate()}</div>
+                    <li key={dayObj.toISOString()} className={`day${isToday ? ' today' : ''}`}>
+                      <div className="text caption_15_medium">{week[i]}</div>
+                      <div className="num">{dayObj.getDate()}</div>
                       <div className="plan"></div>
                     </li>
                   );
@@ -99,15 +107,6 @@ function MemberHome() {
               </ul>
             </DropPanel.Content>
           </DropPanel>
-        </section>
-
-        <section className="section startBtn">
-          <article>
-            <div className="today body_16_bold">
-              {`${year}년 ${month}월 ${date}일 ${dayOfWeek}`}
-            </div>
-            <ButtonType1 text={"오늘의 운동 시작하기"} bg={"green_1"} color={"black_1"} />
-          </article>
         </section>
 
         <section className="section schedule">

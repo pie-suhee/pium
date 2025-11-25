@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const MemberHomeSection = styled.section`
   /* mainBanner S: */
   .mainBanner {
-    margin-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -35,6 +34,17 @@ export const MemberHomeSection = styled.section`
   /* memberShip S: */
   .memberShip {
     margin-top: 30px;
+  }
+
+  .memberShip .drop-panel-container {
+    background-color: var(--form-fill-disabled);
+    border-radius: 0.5em;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.102);
+    overflow: hidden;
+  }
+
+  .memberShip .drop-panel-header {
+    padding: 1.1em 6%;
   }
 
   .memberShip .header-content {
@@ -128,6 +138,17 @@ export const MemberHomeSection = styled.section`
 
   .calendar .header-content {
     color: var(--neutral-black-50);
+  }
+  
+  .calendar .drop-panel-container {
+    background-color: var(--form-fill-disabled);
+    border-radius: 0.5em;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.102);
+    overflow: hidden;
+  }
+
+  .calendar .drop-panel-header {
+    padding: 1.1em 6%;
   }
 
   .calendar .drop-panel-content {

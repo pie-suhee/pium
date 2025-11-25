@@ -52,14 +52,14 @@ body {
 }
 
 /* 폰트 */
-.large_title_24 {
+.large_title_20 {
   font-weight: 700;
   font-size: 1.2em;
   line-height: 1.3;
   letter-spacing: -0.025em;
 }
 
-.popup_title_20 {
+.popup_title_24 {
   font-weight: 700;
   font-size: 1.25em;
   line-height: 1.3;
@@ -110,6 +110,13 @@ body {
 
 .caption_14_bold {
   font-weight: 700;
+  font-size: 0.875em;
+  line-height: 1.4;
+  letter-spacing: -0.025em;
+}
+
+.caption_14_semibold {
+  font-weight: 600;
   font-size: 0.875em;
   line-height: 1.4;
   letter-spacing: -0.025em;
@@ -206,4 +213,34 @@ body {
   font-weight: 500;
   font-size: 0.5em;
   line-height: 1.4;
+}
+
+.calendar .calendar-events {
+  margin-top: 15px;
+}
+
+.calendar .calendar-events ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.calendar .calendar-events .startTime {
+  color: var(--primary-green);
+}
+
+.calendar .calendar-events .event_list {
+  margin-top: 5px;
+  padding: 1em 6%;
+  background-color: #44504B;
+  border: 1px solid var(--primary-green);
+  border-radius: 0.5em;
+}
+
+.calendar .calendar-events .event_list .title {
+  color: var(--neutral-black-100);
+}
+
+.calendar .calendar-events .event_list .time {
+  color: var(--neutral-black-50);
 }
