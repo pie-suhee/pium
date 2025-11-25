@@ -1,5 +1,6 @@
 import { useSelector } from "react-redux";
-import { getWeeklyDates } from '../utils/dateCalculations.js';
+import { useScheduleData } from "../hook/useScheduleData.js";
+import { getWeeklyDates, formatDateKey } from '../utils/dateCalculations.js';
 
 import Header from "../components/Header";
 import DropPanel from "../components/select/DropPanel";
@@ -7,6 +8,8 @@ import ButtonType1 from "../components/button/ButtonType1";
 
 import { MemberHomeSection } from '../style/MemberHome.styles.js';
 
+const week = ['일', '월', '화', '수', '목', '금', '토'];
+const kWeek = ["첫", "둘", "셋", "넷", "다섯"];
 
 function MemberHome() {
   // Redux에서 날짜 정보 가져오기
@@ -15,8 +18,7 @@ function MemberHome() {
   // 로컬 계산 로직 제거, 유틸리티 함수를 사용해 days 배열 생성
   const days = getWeeklyDates(year, month, date, dayOfWeek);
 
-  const week = ['일', '월', '화', '수', '목', '금', '토'];
-  const kWeek = ["첫", "둘", "셋", "넷", "다섯"];
+  const { getEventCount } = useScheduleData("2025-01-01");
 
   return (
     <>
@@ -95,12 +97,20 @@ function MemberHome() {
               <ul className="week">
                 {days.map((dayObj, i) => {
                   const isToday = dayObj.getDate() === date;
+
+                  const currentDayKey = formatDateKey(
+                    dayObj.getFullYear(),
+                    dayObj.getMonth() + 1, // month는 1-기반이어야 함
+                    dayObj.getDate()
+                  );
+
+                  const hasPlan = getEventCount(currentDayKey) > 0;
                   
                   return (
                     <li key={dayObj.toISOString()} className={`day${isToday ? ' today' : ''}`}>
                       <div className="text caption_15_medium">{week[i]}</div>
                       <div className="num">{dayObj.getDate()}</div>
-                      <div className="plan"></div>
+                      <div className={`plan${hasPlan ? ' isPlan' : ''}`}></div>
                     </li>
                   );
                 })}

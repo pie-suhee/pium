@@ -158,7 +158,7 @@ export const MemberHomeSection = styled.section`
   .calendar .week {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .calendar .day {
@@ -206,7 +206,7 @@ export const MemberHomeSection = styled.section`
     border-radius: 50%;
   }
 
-  .calendar .day .plan.isplan {
+  .calendar .day .plan.isPlan {
     display: block;
   }
   /* calendar E: */
