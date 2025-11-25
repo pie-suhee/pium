@@ -97,7 +97,7 @@ export const HealthNoteSection = styled.section`
     .calendar .calendar-events ul {
         display: flex;
         flex-direction: column;
-        gap: 5px;
+        gap: 10px;
     }
 
     .calendar .calendar-events .startTime {
