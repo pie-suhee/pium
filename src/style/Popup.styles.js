@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const PopupSection = styled.section`
-    /* .popupBack {
+    .popupBack {
         width: 100vw;
         height: 100vh;
         background-color: rgba(0, 0, 0, 0.8);
@@ -10,7 +10,7 @@ export const PopupSection = styled.section`
         left: 0;
         z-index: 200;
         backdrop-filter: blur(7px);
-    } */
+    }
 
     /* bottomPopup S: */
     .bottomPopup {

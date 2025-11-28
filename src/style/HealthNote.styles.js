@@ -23,6 +23,7 @@ export const HealthNoteSection = styled.section`
 
     .calendar .calendar-head .date-select {
         color: var(--primary-green);
+        cursor: pointer;
     }
 
     .calendar .calendar-content .calendar-grid .week {
@@ -51,6 +52,7 @@ export const HealthNoteSection = styled.section`
         background-color: var(--neutral-black-500);
         border-radius: 50%;
         position: relative;
+        cursor: pointer;
     }
 
     .calendar .calendar-content .calendar-grid .day .date-number {
