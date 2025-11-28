@@ -24,15 +24,16 @@ const dateSlice = createSlice({
         // 현재 날짜를 특정 날짜로 변경 (선택 또는 이동 시)
         setDate(state, action) {
             // action.payload는 Date 객체여야 합니다.
-            return getDateInfo(action.payload);
+            const newDate = new Date(action.payload);
+            return getDateInfo(newDate);
         },
-        // 주차 이동 로직 (예시)
+        // 주차 이동 로직
         moveWeek(state, action) {
             const currentDate = new Date(state.year, state.month - 1, state.date);
             currentDate.setDate(currentDate.getDate() + action.payload * 7); // payload: 1(다음 주) 또는 -1(이전 주)
             return getDateInfo(currentDate);
         },
-        // 월 이동 로직 (예시)
+        // 월 이동 로직
         moveMonth(state, action) {
             const currentDate = new Date(state.year, state.month - 1, state.date);
             currentDate.setMonth(currentDate.getMonth() + action.payload); // payload: 1(다음 달) 또는 -1(이전 달)

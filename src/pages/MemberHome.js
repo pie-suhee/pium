@@ -4,7 +4,6 @@ import { getWeeklyDates, formatDateKey } from '../utils/dateCalculations.js';
 
 import Header from "../components/Header";
 import DropPanel from "../components/select/DropPanel";
-import ButtonType1 from "../components/button/ButtonType1";
 
 import { MemberHomeSection } from '../style/MemberHome.styles.js';
 
@@ -81,7 +80,7 @@ function MemberHome() {
             <div className="today body_16_bold">
               {`${year}년 ${month}월 ${date}일 ${week[dayOfWeek]}요일`}
             </div>
-            <ButtonType1 text={"오늘의 운동 시작하기"} bg={"green_1"} color={"black_1"} />
+            <button className="btn caption_14_bold">오늘의 운동 시작하기</button>
           </article>
         </section>
 

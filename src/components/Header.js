@@ -36,9 +36,9 @@ const Header = ({ title, type }) => {
   };
 
   const gymOptions = [
-  { value: 'option1', label: '강남 헬스장' },
-  { value: 'option2', label: '송파 헬스장' },
-];
+    { value: 'option1', label: '강남 헬스장' },
+    { value: 'option2', label: '송파 헬스장' },
+  ];
 
   return (
     <header>

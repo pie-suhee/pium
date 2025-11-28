@@ -229,6 +229,13 @@ export const MemberHomeSection = styled.section`
   .startBtn .today {
     color: var(--neutral-black-50);
   }
+
+  .startBtn .btn {
+    padding: 0.725em 0;
+    background-color: var(--primary-green);
+    border-radius: 0.5em;
+    color: var(--neutral-black-800);
+  }
   /* startBtn E: */
 
   /* schedule S: */

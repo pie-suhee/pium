@@ -11,8 +11,18 @@ export const HealthNoteSection = styled.section`
     /* common E: */
 
     /* calendar S: */
+    .calendar .calendar-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+        
     .calendar .calendar-head .date {
         color: var(--neutral-black-50);
+    }
+
+    .calendar .calendar-head .date-select {
+        color: var(--primary-green);
     }
 
     .calendar .calendar-content .calendar-grid .week {
@@ -121,6 +131,29 @@ export const HealthNoteSection = styled.section`
 
     .calendar .calendar-events .event_list .time {
         color: var(--neutral-black-50);
+    }
+
+    .calendar .calendar-popup .close_btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2%;
+    }
+
+    .calendar .calendar-popup .close_btn button {
+        width: 49%;
+        padding: 0.875em 0;
+        border-radius: 0.4em;
+    }
+
+    .calendar .calendar-popup .close_btn button.cancel {
+        background-color: var(--neutral-black-800);
+        color: var(--neutral-black-50);
+    }
+
+    .calendar .calendar-popup .close_btn button.ok {
+        background-color: var(--primary-green);
+        color: var(--neutral-black-800);
     }
     /* calendar E: */
 
