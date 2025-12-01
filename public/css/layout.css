@@ -255,6 +255,10 @@ footer.member ul li.management {
   align-items: center;
 }
 
+.drop-panel-header .arrow {
+  cursor: pointer;
+}
+
 .drop-panel-content-wrapper {
   transform: translateY(-5px);
   transition: height 0.4s cubic-bezier(0.25, 1, 0.5, 1),
