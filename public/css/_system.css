@@ -185,6 +185,13 @@ body {
   letter-spacing: -0.01em;
 }
 
+.number_26 {
+  font-weight: 700;
+  font-size: 1.354em;
+  line-height: 1.3;
+  letter-spacing: -0.025em;
+}
+
 .number_16 {
   font-weight: 400;
   font-size: 1em;

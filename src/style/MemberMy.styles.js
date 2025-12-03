@@ -62,4 +62,28 @@ export const MemberMySection = styled.section`
     color: var(--neutral-black-50);
   }
   /* profile E: */
+
+  /* status S: */
+  .status {
+    margin-top: 1em;
+  }
+
+  .status ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1.225em 8.7%;
+    background-color: rgba(119, 152, 129, 0.27);
+    border-radius: 0.5em;
+  }
+
+  .status ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--neutral-black-50);
+  }
+  /* status E: */
 `;
