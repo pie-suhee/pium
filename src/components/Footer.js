@@ -54,7 +54,7 @@ const Footer = ({ type }) => {
                     </Link>
                 </li>
                 <li className='my'>
-                    <Link to="/error">
+                    <Link to={`/${userType}/my`}>
                         <figure className={isActive('my')}>
                             <img src="/img/footer/my_off.svg" alt="마이 버튼" />
                             <img src="/img/footer/my_on.svg" alt="마이 버튼" />

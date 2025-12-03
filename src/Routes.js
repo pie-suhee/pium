@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Route, Routes, useLocation } from "react-route
 import { useEffect } from "react";
 import MemberHome from './pages/MemberHome';
 import HealthNote from './pages/HealthNote';
+import MemberMy from './pages/MemberMy';
 import Main from './pages/Main';
 import Footer from './components/Footer';
 import Popup from './pages/Popup';
@@ -57,6 +58,7 @@ const AppRoutes = () => {
                     <Route path="/trainer/home" element={<Main />} />
                     <Route path="/member/home" element={<MemberHome />} />
                     <Route path="/member/note" element={<HealthNote />} />
+                    <Route path="/member/my" element={<MemberMy />} />
                     <Route path="/popup" element={<Popup />} />
                     <Route path="/error" element={<Error />} />
                 </Routes>

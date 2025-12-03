@@ -1,0 +1,31 @@
+import Header from "../components/Header.js";
+
+import { MemberMySection } from '../style/MemberMy.styles.js';
+
+function MemberMy() {
+  return (
+    <>
+      <Header title="마이" type="0010000000000000" />
+      <MemberMySection>
+        <section className="section profile">
+          <div className="detail_box">
+            <div className="img_box">
+              <img src={require(`../assets/img/member/home/member_char.svg`).default} alt="회원 캐릭터" />
+            </div>
+            <div className="name_box">
+              <p className="user large_title_24">권선진</p>
+              <p className="gym caption_14">서울 헬스장</p>
+            </div>
+          </div>
+
+          <div className="mod_box">
+            <img src={require(`../assets/img/pencil_icon.svg`).default} alt="수정 아이콘" />
+            <span className="caption_12">수정</span>
+          </div>
+        </section>
+      </MemberMySection>
+    </>
+  );
+}
+
+export default MemberMy;
