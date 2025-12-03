@@ -15,7 +15,7 @@ function MemberMy() {
               <img src={require(`../assets/img/member/home/member_char.svg`).default} alt="회원 캐릭터" />
             </div>
             <div className="name_box">
-              <p className="user large_title_24">권선진</p>
+              <p className="user large_title_24">김지우</p>
               <p className="gym caption_14">서울 헬스장</p>
             </div>
           </div>
