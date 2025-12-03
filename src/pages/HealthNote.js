@@ -1,4 +1,5 @@
-import React, { useState, useCallback, useEffect } from "react";
+import { useState, useCallback, useEffect } from "react";
+import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { setDate } from '../store/dateSlice.js';
 import { useScheduleData } from "../hook/useScheduleData.js";
@@ -203,7 +204,9 @@ function HealthNote() {
             <span className="popup_title_20">신체 기록</span>
             <div className="icon_box">
               <div className="icon">
-                <img src={require(`../assets/img/plus_green_icon.svg`).default} alt="추가" />
+                <Link to="/error">
+                  <img src={require(`../assets/img/plus_green_icon.svg`).default} alt="추가" />
+                </Link>
               </div>
             </div>
           </div>
@@ -232,12 +235,17 @@ function HealthNote() {
                 </div>
               </li>
             </ul>
+
             <div className="history">
               <div className="text">
                 <span className="kor caption_13">최근 기록</span>
                 <span className="num number_13">2025.4.15</span>
               </div>
-              <div className="btn caption_13">지난 기록보기</div>
+              <div className="btn">
+                <Link to="/error" className="caption_13">
+                  지난 기록보기
+                </Link>
+              </div>
             </div>
           </article>
         </section>
@@ -247,10 +255,14 @@ function HealthNote() {
             <span className="popup_title_20">오늘의 운동</span>
             <div className="icon_box">
               <div className="icon">
-                <img src={require(`../assets/img/plus_green_icon.svg`).default} alt="추가" />
+                <Link to="/error">
+                  <img src={require(`../assets/img/plus_green_icon.svg`).default} alt="추가" />
+                </Link>
               </div>
               <div className="icon">
-                <img src={require(`../assets/img/downloadFile_green_icon.svg`).default} alt="추가" />
+                <Link to="/error">
+                  <img src={require(`../assets/img/downloadFile_green_icon.svg`).default} alt="추가" />
+                </Link>
               </div>
             </div>
           </div>
@@ -296,7 +308,9 @@ function HealthNote() {
             <span className="popup_title_20">오늘의 식단</span>
             <div className="icon_box">
               <div className="icon">
-                <img src={require(`../assets/img/plus_green_icon.svg`).default} alt="추가" />
+                <Link to="/error">
+                  <img src={require(`../assets/img/plus_green_icon.svg`).default} alt="추가" />
+                </Link>
               </div>
             </div>
           </div>

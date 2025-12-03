@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { useSelector } from "react-redux";
 import { useScheduleData } from "../hook/useScheduleData.js";
 import { getWeeklyDates, formatDateKey } from '../utils/dateCalculations.js';
@@ -77,10 +78,12 @@ function MemberHome() {
 
         <section className="section startBtn">
           <article>
-            <div className="today body_16_bold">
-              {`${year}년 ${month}월 ${date}일 ${week[dayOfWeek]}요일`}
-            </div>
-            <button className="btn caption_14_bold">오늘의 운동 시작하기</button>
+            <Link to="/error">
+              <div className="today body_16_bold">
+                {`${year}년 ${month}월 ${date}일 ${week[dayOfWeek]}요일`}
+              </div>
+              <button className="btn caption_14_bold">오늘의 운동 시작하기</button>
+            </Link>
           </article>
         </section>
 
@@ -120,10 +123,12 @@ function MemberHome() {
 
         <section className="section schedule">
           <div className="link_box">
-            <span className="body_16_bold">나의 스케줄</span>
-            <div className="arrow">
-              <img src={require(`../assets/img/link_icon.svg`).default} alt="이동 화살표" />
-            </div>
+            <Link to="/member/note">
+              <span className="body_16_bold">나의 스케줄</span>
+              <div className="arrow">
+                <img src={require(`../assets/img/link_icon.svg`).default} alt="이동 화살표" />
+              </div>
+            </Link>
           </div>
 
           <article>
@@ -141,10 +146,12 @@ function MemberHome() {
 
         <section className="section record">
           <div className="link_box">
-            <span className="body_16_bold">나의 운동 기록</span>
-            <div className="arrow">
-              <img src={require(`../assets/img/link_icon.svg`).default} alt="이동 화살표" />
-            </div>
+            <Link to="/member/note">
+              <span className="body_16_bold">나의 운동 기록</span>
+              <div className="arrow">
+                <img src={require(`../assets/img/link_icon.svg`).default} alt="이동 화살표" />
+              </div>
+            </Link>
           </div>
 
           <article className="record_list">

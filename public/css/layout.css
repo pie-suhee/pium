@@ -223,14 +223,16 @@ footer.member ul li.management {
 /* footer E: */
 
 /* linkbox S: */
-.link_box {
+.link_box a {
   display: flex;
   align-items: center;
   gap: 4px;
 }
 
 .link_box.sb {
+  display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .link_box span {
@@ -241,6 +243,11 @@ footer.member ul li.management {
   display: flex;
   align-items: center;
   gap: 16px;
+}
+
+.link_box .arrow {
+  display: flex;
+  align-items: center;
 }
 /* linkbox E: */
 

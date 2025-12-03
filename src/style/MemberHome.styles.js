@@ -216,7 +216,7 @@ export const MemberHomeSection = styled.section`
     margin-top: 20px;
   }
 
-  .startBtn article {
+  .startBtn article a {
     display: flex;
     flex-direction: column;
     gap: 20px;

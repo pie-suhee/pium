@@ -206,7 +206,7 @@ export const HealthNoteSection = styled.section`
         color: var(--neutral-black-500);
     }
 
-    .body .history .btn {
+    .body .history .btn a {
         color: var(--neutral-black-300);
     }
     /* body E: */

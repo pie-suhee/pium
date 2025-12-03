@@ -45,13 +45,16 @@ export const MemberMySection = styled.section`
   }
 
   .profile .mod_box {
-    display: flex;
-    align-items: center;
-    gap: 0.2em;
     flex-shrink: 0;
     padding: 0.35em 0.5em;
     background-color: var(--neutral-black-700);
     border-radius: 1em;
+  }
+
+  .profile .mod_box a {
+    display: flex;
+    align-items: center;
+    gap: 0.2em;
   }
 
   .profile .mod_box img {
@@ -78,7 +81,7 @@ export const MemberMySection = styled.section`
     border-radius: 0.5em;
   }
 
-  .status ul li {
+  .status ul li a {
     display: flex;
     justify-content: center;
     align-items: center;

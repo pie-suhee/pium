@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import Header from "../components/Header.js";
 
 import { MemberMySection } from '../style/MemberMy.styles.js';
@@ -19,26 +21,34 @@ function MemberMy() {
           </div>
 
           <div className="mod_box">
-            <img src={require(`../assets/img/pencil_icon.svg`).default} alt="수정 아이콘" />
-            <span className="caption_12">수정</span>
+            <Link to="/error">
+              <img src={require(`../assets/img/pencil_icon.svg`).default} alt="수정 아이콘" />
+              <span className="caption_12">수정</span>
+            </Link>
           </div>
         </section>
 
         <section className="section status">
           <ul>
             <li className="remain">
-              <div className="num number_26">2</div>
-              <div className="txt caption_12">남은 이용권</div>
+              <Link to="/error">
+                <div className="num number_26">2</div>
+                <div className="txt caption_12">남은 이용권</div>
+              </Link>
             </li>
 
             <li className="complete">
-              <div className="num number_26">15</div>
-              <div className="txt caption_12">총 운동 기록</div>
+              <Link to="/error">
+                <div className="num number_26">15</div>
+                <div className="txt caption_12">총 운동 기록</div>
+              </Link>
             </li>
 
             <li className="cancel">
-              <div className="num number_26">2</div>
-              <div className="txt caption_12">취소/미루기</div>
+              <Link to="/error">
+                <div className="num number_26">2</div>
+                <div className="txt caption_12">취소/미루기</div>
+              </Link>
             </li>
           </ul>
         </section>
