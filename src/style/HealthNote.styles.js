@@ -38,7 +38,7 @@ export const HealthNoteSection = styled.section`
         text-align: center;
         background-color: var(--form-fill-disabled);
         padding: 5%;
-        border-radius: 0.5em;
+        border-radius: 0.5rem;
     }
     
     .calendar .calendar-content .calendar-grid > div {
@@ -56,7 +56,7 @@ export const HealthNoteSection = styled.section`
     }
 
     .calendar .calendar-content .calendar-grid .day .date-number {
-        padding: 0 0 0.08em 0.015em;
+        padding: 0 0 0.08rem 0.015rem;
         color: var(--neutral-black-50);
     }
     
@@ -95,7 +95,7 @@ export const HealthNoteSection = styled.section`
         align-items: center;
         width: 40%;
         aspect-ratio: 1/1;
-        padding: 0 0 0.08em 0.015em;
+        padding: 0 0 0.08rem 0.015rem;
         background-color: var(--secondary-red);
         border-radius: 50%;
         position: absolute;
@@ -121,10 +121,10 @@ export const HealthNoteSection = styled.section`
 
     .calendar .calendar-events .event_list {
         margin-top: 5px;
-        padding: 1em 6%;
+        padding: 1rem 6%;
         background-color: #44504B;
         border: 1px solid var(--primary-green);
-        border-radius: 0.5em;
+        border-radius: 0.5rem;
     }
 
     .calendar .calendar-events .event_list .title {
@@ -144,8 +144,8 @@ export const HealthNoteSection = styled.section`
 
     .calendar .calendar-popup .close_btn button {
         width: 49%;
-        padding: 0.875em 0;
-        border-radius: 0.4em;
+        padding: 0.875rem 0;
+        border-radius: 0.4rem;
     }
 
     .calendar .calendar-popup .close_btn button.cancel {
@@ -174,9 +174,9 @@ export const HealthNoteSection = styled.section`
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 1.1em 6%;
+        padding: 1.1rem 6%;
         background-color: var(--neutral-black-700);
-        border-radius: 0.5em;
+        border-radius: 0.5rem;
         color: var(--neutral-black-50);
     }
 
@@ -213,9 +213,9 @@ export const HealthNoteSection = styled.section`
 
     /* record S: */
     .record .record_list ul {
-        padding: 1.1em 6% 1.2em;
+        padding: 1.1rem 6% 1.2rem;
         background-color: #494949;
-        border-radius: 0.5em;
+        border-radius: 0.5rem;
     }
 
     .record .record_list ul li {
@@ -248,7 +248,7 @@ export const HealthNoteSection = styled.section`
     }
 
     .record .record_list ul li + li {
-        margin-top: 2em;
+        margin-top: 2rem;
         position: relative;
     }
 
@@ -258,7 +258,7 @@ export const HealthNoteSection = styled.section`
         height: 1px;
         background-color: var(--neutral-black-600);
         position: absolute;
-        top: -0.9em;
+        top: -0.9rem;
         /* transform: translateY(-100%); */
     }
     /* record E: */
@@ -281,7 +281,7 @@ export const HealthNoteSection = styled.section`
         aspect-ratio: 1/1;
         flex-shrink: 0;
         background-color: #d6d6d7;
-        border-radius: 0.4em;
+        border-radius: 0.4rem;
         overflow: hidden;
         position: relative;
     }

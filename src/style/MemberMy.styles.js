@@ -11,7 +11,7 @@ export const MemberMySection = styled.section`
   .profile .detail_box {
     display: flex;
     align-items: center;
-    gap: 0.65em;
+    gap: 0.65rem;
     width: 100%;
   }
 
@@ -33,7 +33,7 @@ export const MemberMySection = styled.section`
   .profile .detail_box .name_box {
     display: flex;
     flex-direction: column;
-    gap: 0.5em;
+    gap: 0.5rem;
   }
 
   .profile .detail_box .name_box .user {
@@ -46,19 +46,19 @@ export const MemberMySection = styled.section`
 
   .profile .mod_box {
     flex-shrink: 0;
-    padding: 0.35em 0.5em;
+    padding: 0.35rem 0.5rem;
     background-color: var(--neutral-black-700);
-    border-radius: 1em;
+    border-radius: 1rem;
   }
 
   .profile .mod_box a {
     display: flex;
     align-items: center;
-    gap: 0.2em;
+    gap: 0.2rem;
   }
 
   .profile .mod_box img {
-    width: 0.9em;
+    width: 0.9rem;
   }
 
   .profile .mod_box span {
@@ -68,7 +68,7 @@ export const MemberMySection = styled.section`
 
   /* status S: */
   .status {
-    margin-top: 1em;
+    margin-top: 1rem;
   }
 
   .status ul {
@@ -76,9 +76,9 @@ export const MemberMySection = styled.section`
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 1.225em 8.7%;
+    padding: 1.225rem 8.7%;
     background-color: rgba(119, 152, 129, 0.27);
-    border-radius: 0.5em;
+    border-radius: 0.5rem;
   }
 
   .status ul li a {

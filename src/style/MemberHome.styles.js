@@ -16,18 +16,18 @@ export const MemberHomeSection = styled.section`
 
   .mainBanner .text_box .text_t1 {
     font-weight: 700;
-    font-size: 0.875em;
+    font-size: 0.875rem;
     color: var(--primary-green);
     line-height: 1.4;
-    letter-spacing: -0.025em;
+    letter-spacing: -0.025rem;
   }
 
   .mainBanner .text_box .text_t2 {
     font-weight: 700;
-    font-size: 1.2em;
+    font-size: 1.2rem;
     color: var(--neutral-black-50);
     line-height: 1.3;
-    letter-spacing: -0.025em;
+    letter-spacing: -0.025rem;
   }
   /* mainBanner E: */
 
@@ -38,13 +38,13 @@ export const MemberHomeSection = styled.section`
 
   .memberShip .drop-panel-container {
     background-color: var(--form-fill-disabled);
-    border-radius: 0.5em;
+    border-radius: 0.5rem;
     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.102);
     overflow: hidden;
   }
 
   .memberShip .drop-panel-header {
-    padding: 1.1em 6%;
+    padding: 1.1rem 6%;
   }
 
   .memberShip .header-content {
@@ -72,9 +72,9 @@ export const MemberHomeSection = styled.section`
     padding: 4px 4px 3px;
     border-radius: 4px;
     font-weight: 400;
-    font-size: 0.5em;
+    font-size: 0.5rem;
     line-height: 1;
-    letter-spacing: -0.01em;
+    letter-spacing: -0.01rem;
   }
 
   .memberShip .header-content .member .tag_box .tag.type1 {
@@ -99,7 +99,7 @@ export const MemberHomeSection = styled.section`
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: 0.75em 6%;
+    padding: 0.75rem 6%;
   }
 
   .memberShip .drop-panel-content .info-row {
@@ -110,10 +110,10 @@ export const MemberHomeSection = styled.section`
 
   .memberShip .drop-panel-content .info-row span {
     font-weight: 400;
-    font-size: 0.8125em;
+    font-size: 0.8125rem;
     color: var(--neutral-black-50);
     line-height: 1.4;
-    letter-spacing: -0.025em;
+    letter-spacing: -0.025rem;
   }
 
   .memberShip .drop-panel-content .info-row .index {
@@ -142,17 +142,17 @@ export const MemberHomeSection = styled.section`
   
   .calendar .drop-panel-container {
     background-color: var(--form-fill-disabled);
-    border-radius: 0.5em;
+    border-radius: 0.5rem;
     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.102);
     overflow: hidden;
   }
 
   .calendar .drop-panel-header {
-    padding: 1.1em 6%;
+    padding: 1.1rem 6%;
   }
 
   .calendar .drop-panel-content {
-    padding: 0.75em 6% 1.5em;
+    padding: 0.75rem 6% 1.5rem;
   }
 
   .calendar .week {
@@ -177,18 +177,18 @@ export const MemberHomeSection = styled.section`
   }
 
   .calendar .day .num {
-    width: 2em;
+    width: 2rem;
     aspect-ratio: 1/1;
-    margin-top: 1.25em;
+    margin-top: 1.25rem;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: 400;
-    font-size: 1em;
+    font-size: 1rem;
     color: #b4b8c0;
     line-height: 1;
-    letter-spacing: -0.025em;
+    letter-spacing: -0.025rem;
   }
 
   .calendar .day.today .num {
@@ -220,9 +220,9 @@ export const MemberHomeSection = styled.section`
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 1em 6%;
+    padding: 1rem 6%;
     background-color: var(--form-fill-disabled);
-    border-radius: 0.5em;
+    border-radius: 0.5rem;
     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.102);
   }
 
@@ -231,9 +231,9 @@ export const MemberHomeSection = styled.section`
   }
 
   .startBtn .btn {
-    padding: 0.725em 0;
+    padding: 0.725rem 0;
     background-color: var(--primary-green);
-    border-radius: 0.5em;
+    border-radius: 0.5rem;
     color: var(--neutral-black-800);
   }
   /* startBtn E: */
@@ -260,10 +260,10 @@ export const MemberHomeSection = styled.section`
     display: flex;
     flex-direction: column;
     gap: 6px;
-    padding: 1em 6%;
+    padding: 1rem 6%;
     background-color: #44504B;
     border: 1px solid var(--primary-green);
-    border-radius: 0.5em;
+    border-radius: 0.5rem;
     box-shadow: 0px 0px 2.18px 0px rgba(0, 0, 0, 0.102);
   }
 
@@ -286,9 +286,9 @@ export const MemberHomeSection = styled.section`
   }
 
   .record .record_list ul {
-    padding: 1.1em 6% 1.2em;
+    padding: 1.1rem 6% 1.2rem;
     background-color: #494949;
-    border-radius: 0.5em;
+    border-radius: 0.5rem;
   }
 
   .record .record_list ul li {
@@ -321,7 +321,7 @@ export const MemberHomeSection = styled.section`
   }
 
   .record .record_list ul li + li {
-    margin-top: 2em;
+    margin-top: 2rem;
     position: relative;
   }
 
@@ -331,7 +331,7 @@ export const MemberHomeSection = styled.section`
     height: 1px;
     background-color: var(--neutral-black-600);
     position: absolute;
-    top: -0.9em;
+    top: -0.9rem;
     /* transform: translateY(-100%); */
   }
   /* record E: */

@@ -39,25 +39,25 @@ export const PopupSection = styled.section`
 
     .bottomPopup .popupFooter {
         align-items: flex-end;
-        padding-bottom: 0.4em;
+        padding-bottom: 0.4rem;
     }
 
     .bottomPopup .toggleSlide .slideLine {
         width: 9%;
-        height: 0.25em;
+        height: 0.25rem;
         background-color: rgba(217, 217, 217, 1);
         border-radius: 2.5px;
     }
 
     .bottomPopup .popupFooter .footerLine {
         width: 36%;
-        height: 0.25em;
+        height: 0.25rem;
         background-color: rgba(248, 248, 248, 1);
         border-radius: 2.5px;
     }
 
     .bottomPopup .bottom-popup-content {
         width: 88%;
-        margin: 1.25em auto 0;
+        margin: 1.25rem auto 0;
     }
 `;
