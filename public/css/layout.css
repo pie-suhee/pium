@@ -289,3 +289,24 @@ nav.member ul li.management {
   border: 1px solid var(--neutral-black-600);
 }
 /* list type1 E: */
+
+/* customLink1 S: */
+.customLink1 article {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.95rem 6%;
+  background-color: var(--neutral-black-700);
+  border-radius: 0.4rem;
+  box-shadow: 0 2px 5px rgba(25, 33, 61, 0.08);
+}
+
+.customLink1 article figure {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.customLink1 article figure figcaption {
+  color: var(--neutral-white);
+}
+/* customLink1 E: */

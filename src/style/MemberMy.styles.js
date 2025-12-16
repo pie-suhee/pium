@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 
 export const MemberMySection = styled.section`
+  .section + .section {
+    margin-top: 20px;
+  }
+
   /* profile S: */
   .profile {
     display: flex;
@@ -51,7 +55,7 @@ export const MemberMySection = styled.section`
     border-radius: 1rem;
   }
 
-  .profile .mod_box a {
+  .profile .mod_box figure {
     display: flex;
     align-items: center;
     gap: 0.2rem;
@@ -61,7 +65,7 @@ export const MemberMySection = styled.section`
     width: 0.9rem;
   }
 
-  .profile .mod_box span {
+  .profile .mod_box figcaption {
     color: var(--neutral-black-50);
   }
   /* profile E: */
@@ -89,4 +93,21 @@ export const MemberMySection = styled.section`
     color: var(--neutral-black-50);
   }
   /* status E: */
+
+  /* function, setting S: */
+  .function h4,
+  .setting h4 {
+    color: var(--neutral-black-300);
+  }
+
+  .function h4 + ul,
+  .setting h4 + ul {
+    margin-top: 10px;
+  }
+
+  .function ul li + li,
+  .setting ul li + li {
+    margin-top: 10px;
+  }
+  /* function, setting E: */
 `;
