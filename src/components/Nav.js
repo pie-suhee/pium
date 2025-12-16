@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
 
-const Footer = ({ type }) => {
-    const { userType, footerType } = type;
+const Nav = ({ type }) => {
+    const { userType, navType } = type;
 
-    const isActive = (menu) => footerType === menu ? 'on' : '';
+    const isActive = (menu) => navType === menu ? 'on' : '';
 
     return (
-        <footer className={`${userType} ${footerType}`}>
+        <nav className={`${userType} ${navType}`}>
             <ul>
                 <li className='home'>
                     <Link to={`/${userType}/home`}>
@@ -63,8 +63,8 @@ const Footer = ({ type }) => {
                     </Link>
                 </li>
             </ul>
-        </footer>
+        </nav>
     );
 };
 
-export default Footer;
+export default Nav;

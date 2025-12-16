@@ -54,170 +54,170 @@ body {
 /* 폰트 */
 .large_title_20 {
   font-weight: 700;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   line-height: 1.3;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.025rem;
 }
 
 .popup_title_24 {
   font-weight: 700;
-  font-size: 1.25em;
+  font-size: 1.25rem;
   line-height: 1.3;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.025rem;
 }
 
 .body_18 {
   font-weight: 400;
-  font-size: 1.125em;
+  font-size: 1.125rem;
   line-height: 1.4;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.025rem;
 }
 
 .body_18_semibold {
   font-weight: 600;
-  font-size: 1.125em;
+  font-size: 1.125rem;
   line-height: 1.4;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.025rem;
 }
 
 .body_16 {
   font-weight: 400;
-  font-size: 1em;
+  font-size: 1rem;
   line-height: 1.4;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.025rem;
 }
 
 .body_16_semibold {
   font-weight: 600;
-  font-size: 1em;
+  font-size: 1rem;
   line-height: 1.4;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.025rem;
 }
 
 .body_16_bold {
   font-weight: 700;
-  font-size: 1em;
+  font-size: 1rem;
   line-height: 1.4;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.025rem;
 }
 
 .caption_15_medium {
   font-weight: 700;
-  font-size: 0.9375em;
+  font-size: 0.9375rem;
   line-height: 1.4;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.025rem;
 }
 
 .caption_14_bold {
   font-weight: 700;
-  font-size: 0.875em;
+  font-size: 0.875rem;
   line-height: 1.4;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.025rem;
 }
 
 .caption_14_semibold {
   font-weight: 600;
-  font-size: 0.875em;
+  font-size: 0.875rem;
   line-height: 1.4;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.025rem;
 }
 
 .caption_14 {
   font-weight: 400;
-  font-size: 0.875em;
+  font-size: 0.875rem;
   line-height: 1.4;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.025rem;
 }
 
 .caption_13_semibold {
   font-weight: 600;
-  font-size: 0.8125em;
+  font-size: 0.8125rem;
   line-height: 1.4;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.025rem;
 }
 
 .caption_13 {
   font-weight: 400;
-  font-size: 0.8125em;
+  font-size: 0.8125rem;
   line-height: 1.4;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.025rem;
 }
 
 .caption_12_medium {
   font-weight: 500;
-  font-size: 0.75em;
+  font-size: 0.75rem;
   line-height: 1.4;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.025rem;
 }
 
 .caption_12 {
   font-weight: 400;
-  font-size: 0.75em;
+  font-size: 0.75rem;
   line-height: 1.4;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.025rem;
 }
 
 .caption_11_bold {
   font-weight: 700;
-  font-size: 0.6875em;
+  font-size: 0.6875rem;
   line-height: 1.4;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.025rem;
 }
 
 .caption_11 {
   font-weight: 400;
-  font-size: 0.6875em;
+  font-size: 0.6875rem;
   line-height: 1.4;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.025rem;
 }
 
 .caption_10 {
   font-weight: 400;
-  font-size: 0.625em;
+  font-size: 0.625rem;
   line-height: 1.4;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.025rem;
 }
 
 .caption2_1 {
   font-weight: 400;
-  font-size: 0.5em;
+  font-size: 0.5rem;
   line-height: 1.2;
-  letter-spacing: -0.01em;
+  letter-spacing: -0.01rem;
 }
 
 .number_26 {
   font-weight: 700;
-  font-size: 1.354em;
+  font-size: 1.354rem;
   line-height: 1.3;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.025rem;
 }
 
 .number_16 {
   font-weight: 400;
-  font-size: 1em;
+  font-size: 1rem;
   line-height: 1.4;
 }
 
 .number_13_medium {
   font-weight: 500;
-  font-size: 0.8125em;
+  font-size: 0.8125rem;
   line-height: 1.4;
 }
 
 .number_13 {
   font-weight: 400;
-  font-size: 0.8125em;
+  font-size: 0.8125rem;
   line-height: 1.4;
 }
 
 .number_10_medium {
   font-weight: 500;
-  font-size: 0.625em;
+  font-size: 0.625rem;
   line-height: 1.4;
 }
 
 .number_8_medium {
   font-weight: 500;
-  font-size: 0.5em;
+  font-size: 0.5rem;
   line-height: 1.4;
 }

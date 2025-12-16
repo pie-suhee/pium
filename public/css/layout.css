@@ -158,8 +158,8 @@ header .custom-select-selected + ul li {
 }
 /* header E: */
 
-/* footer S: */
-footer {
+/* nav S: */
+nav {
   display: none;
   width: 100%;
   max-width: 720px;
@@ -170,12 +170,12 @@ footer {
   z-index: 100;
 }
 
-footer.trainer,
-footer.member {
+nav.trainer,
+nav.member {
   display: block;
 }
 
-footer ul {
+nav ul {
   width: 100%;
   padding: 0.5625em 6.6% 1.0125em;
   display: flex;
@@ -183,7 +183,7 @@ footer ul {
   align-items: center;
 }
 
-footer figure {
+nav figure {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -191,36 +191,36 @@ footer figure {
   gap: 4px;
 }
 
-footer figure img {
+nav figure img {
   width: 1.625em;
 }
 
-footer figure img:nth-of-type(2),
-footer figure.on img:nth-of-type(1) {
+nav figure img:nth-of-type(2),
+nav figure.on img:nth-of-type(1) {
   display: none;
 }
 
-footer figure.on img:nth-of-type(2) {
+nav figure.on img:nth-of-type(2) {
   display: block;
 }
 
-footer figure figcaption {
+nav figure figcaption {
   color: var(--neutral-black-500);
 }
 
-footer figure.on figcaption {
+nav figure.on figcaption {
   color: var(--neutral-black-50);
 }
 
-footer.trainer ul li.note {
+nav.trainer ul li.note {
   display: none;
 }
 
-footer.member ul li.schedule,
-footer.member ul li.management {
+nav.member ul li.schedule,
+nav.member ul li.management {
   display: none;
 }
-/* footer E: */
+/* nav E: */
 
 /* linkbox S: */
 .link_box a {

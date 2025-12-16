@@ -4,7 +4,7 @@ import MemberHome from './pages/MemberHome';
 import HealthNote from './pages/HealthNote';
 import MemberMy from './pages/MemberMy';
 import Main from './pages/Main';
-import Footer from './components/Footer';
+import Nav from './components/Nav';
 import Popup from './pages/Popup';
 import Error from './pages/Error';
 
@@ -31,22 +31,22 @@ const AppRoutes = () => {
     /* 트레이너 / 회원 구분 E: */
 
     /* 푸터 버튼 on/off 구분 S: */
-    let footerType = "";
+    let navType = "";
 
     if (parts[2] === "home") {
-        footerType = "home";
+        navType = "home";
     } else if (parts[2] === "schedule") {
-        footerType = "schedule";
+        navType = "schedule";
     } else if (parts[2] === "note") {
-        footerType = "note";
+        navType = "note";
     } else if (parts[2] === "chat") {
-        footerType = "chat";
+        navType = "chat";
     } else if (parts[2] === "management") {
-        footerType = "management";
+        navType = "management";
     } else if (parts[2] === "my") {
-        footerType = "my";
+        navType = "my";
     } else {
-        footerType = "";
+        navType = "";
     }
     /* 푸터 버튼 on/off 구분 E: */
 
@@ -63,7 +63,7 @@ const AppRoutes = () => {
                     <Route path="/error" element={<Error />} />
                 </Routes>
             </div>
-            <Footer type={{ userType, footerType }} />
+            <Nav type={{ userType, navType }} />
         </main>
     );
 };
